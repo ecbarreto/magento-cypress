@@ -8,6 +8,8 @@
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "../Dockerfile"
 	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/e2e,type=bind",
+	"workspaceFolder": "/e2e",
 
 	"runArgs": ["--env-file",".devcontainer/devcontainer.env"],
 
@@ -24,7 +26,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"GitHub.copilot"
 			]
 		}
 	}	
