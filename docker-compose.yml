@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  cypress:
+    image: cypress/included:13.2.0
+    env_file:
+      - .env
+    entrypoint: /bin/sh -c "while sleep 1000; do :; done"
